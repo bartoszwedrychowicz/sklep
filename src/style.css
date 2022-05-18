@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: italic;
+}
+.navbar-container{
+    background: linear-gradient(-45deg, #6b6967, white);
+    
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.navbar-container nav a{
+    text-decoration: none;
+    color: #000;
+}
+
+.navbar-container nav a h1{
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.icon-wrapper{
+    display: flex;
+    gap: 7rem;
+}
+.cart ion-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 0 .5rem;
+}
+.account ion-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 10rem;
+}
