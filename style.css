@@ -13,11 +13,13 @@ body{
 }
 .navbar-container{
     background: linear-gradient(-45deg, #6b6967, white);
+    user-select: none;
     
 }
 .navbar{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    align-items: center;
     padding: 1rem;
 }
 .navbar-container nav a{
@@ -29,22 +31,50 @@ body{
     font-size: 2rem;
     cursor: pointer;
 }
+.navbar-container input{
+    height: 3vw;
+    width: 40vw;
+    border: 1px solid #123121;
+    outline: none;
+    border-radius: .3rem ;
+    font-size: 2rem;
+}
 
-.icon-wrapper{
-    display: flex;
-    gap: 7rem;
+.icon{
+    padding:  0 1rem;
+    font-size: 1.7rem;
 }
-.cart ion-icon{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    margin: 0 .5rem;
+
+.icon-text{
+    font-size: 1.7rem;
 }
-.account ion-icon{
+
+.category-head{
+    margin:10px 0;
+}
+.category-head ul{
+    list-style-type: none;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.category-title{
+    font-size: 1.3rem;
+    flex: 0 0 calc(16.6667% - 10px);
+    display: flex;
     justify-content: center;
-    text-align: center;
-    margin: 10rem;
+    padding: 12px;
+    color: #123121;
+    margin: 5px;
+    cursor: pointer;
+    transition: all 0.4 ease;
+}
+
+.category-title:hover{
+    opacity: 0.7;
+}
+
+hr{
+    opacity: 0.3;
 }
