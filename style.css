@@ -6,7 +6,7 @@ input[type=search]::-ms-reveal {  display: none; width : 0; height: 0; }
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button,
-input[type="search"]::-webkit-search-results-decoration { display: none; }
+input[type="search"]::-webkit-search-results-decoration { display: none;}
 
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
@@ -29,7 +29,7 @@ body{
 }
 .navbar{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     padding: 1rem;
 }
@@ -91,5 +91,29 @@ body{
 }
 
 .active{
-    
+    color: red;
 }
+/* animacja podkreślenia */
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #123121;
+  }
+  
+  .hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #123121;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
