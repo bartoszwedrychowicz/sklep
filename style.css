@@ -21,6 +21,7 @@ body{
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
     text-decoration: italic;
+    overflow-x: hidden;
 }
 .navbar-container{
     user-select: none;
