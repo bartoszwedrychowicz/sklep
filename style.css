@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Dancing+Script:wght@500&family=Fira+Code:wght@300;400&family=Pacifico&family=Playfair+Display:wght@500&family=Roboto:ital,wght@0,400;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 /* clears the 'X' from Internet Explorer */
 input[type=search]::-ms-clear {  display: none; width : 0; height: 0; }
 input[type=search]::-ms-reveal {  display: none; width : 0; height: 0; }
@@ -8,8 +11,23 @@ input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration { display: none;}
 
+:root{
+    /* Fonts */
+    --ff-amatic:  'Amatic SC', cursive;
+    --ff-dancing-script: 'Dancing Script', cursive;
+    --ff-fira-code:  'Fira Code', monospace;
+    --ff-pacifico: 'Pacifico', cursive;
+    --ff-playfair-display: 'Playfair Display', serif;
+    --ff-roboto:'Roboto', sans-serif;
+    /* Background Colors */
+    --bg-clr-outer-space-crayola: #36413e;
+    --bg-clr-davys-grey: #5d5e60;
+    --bg-clr-taupe-gray: #8D8D92;
+    --bg-clr-thistle: #beb2c8;
+    --bg-clr-light-gray:#d7d6d6;
+}
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 
 *,*::after,*::before{
     margin: 0;
@@ -88,7 +106,7 @@ body{
     opacity: 0.7;
 }
 
-hr{
+.hr-opacity{
     opacity: 0.3;
 }
 
@@ -119,3 +137,29 @@ hr{
     transform: scaleX(1);
     transform-origin: bottom left;
   }
+  .card{
+  }
+
+  .image-container{
+    background-color: red;
+}
+
+.product-image{
+    margin:0.2em;
+    margin-top: 0.5em;
+    object-position: center;
+    width:15vw;
+  }
+
+  .product-container{
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .product-name{
+    font-family: var(--ff-roboto);
+  }
+
+  

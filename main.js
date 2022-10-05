@@ -24,27 +24,38 @@ let products = {
 for (let i of products.data){
     let card = document.createElement("div")
     card.classList.add("card", i.category);
+
     let imgContainer = document.createElement("div")
     imgContainer.classList.add("image-container")
+
     let image = document.createElement("img")
     image.setAttribute("src", i.imageUrl)
+    image.classList.add("product-image")
     imgContainer.appendChild(image)
     card.appendChild(imgContainer)
+
     let container = document.createElement("div")
-    container.classList.add("container")
+    container.classList.add("product-container")
+
     let category = document.createElement("div")
     category.innerText = "Category: " + i.category;
     container.appendChild(category)
+
     let name = document.createElement("h5")
     name.classList.add("product-name")
     name.innerText = i.productName.toUpperCase();
     container.appendChild(name)
+
     let price = document.createElement("h6")
     price.innerText = i.price
     container.appendChild(price)
     
+    let line = document.createElement("hr")
+    line.classList.add("hr-opacity")
+    container.appendChild(line)
+
     card.appendChild(container)
-    document.getElementById("products").appendChild(card)
+    document.getElementById("products").appendChild(card);
 }
 
 
